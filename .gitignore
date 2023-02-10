@@ -1,0 +1,4 @@
+# Project exclude paths
+/grpc-common/target/
+/master/target/
+/worker/target/

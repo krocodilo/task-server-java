@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package me.myself.grpc;   // The name of the package where to save the generated code
+option java_multiple_files = true;
+
+
+service GrpcService {
+
+  // Client -> Server
+  rpc RequestTask( TaskRequest ) returns (Task) {}
+}
+
+
+message Task {
+  int64 id = 1;     // Task ID; int64 = long, which can save the time in miliseconds
+  string task = 2;  // Can also send as Bytes
+}
+
+message TaskRequest {
+  int64 idCompletedTask = 1;
+  bool success = 2;
+}
