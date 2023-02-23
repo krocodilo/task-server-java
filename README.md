@@ -7,6 +7,12 @@ It uses gRPC for communication, which might be the fastest API protocol/framewor
 
 This project is split into three modules: grpc-common; master; worker.
 
+## To-Do
+- handle all possible communication errors
+- Communications are currently unencrypted
+- create admin console on server
+- task creator must have method to return the current progress 
+
 ## Instructions
 #### gRPC Configuration
 - Configure `grpc-common/.../config.proto`
